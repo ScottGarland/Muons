@@ -33,8 +33,5 @@ popt, pcov = scipy.optimize.curve_fit(exp_decay, t_var, y_var)
 N0, tau, B = popt
 
 plt.scatter(t_var, y_var)
-print("%s" %(time.time() - start_time)) # checking execution time for the plot
+print("Plot execution time: %s sec" %(time.time() - start_time)) # checking execution time for the plot
 plt.show()
-
-if __name__ == '__main__':
-    main()
